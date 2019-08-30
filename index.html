@@ -11,27 +11,44 @@
 
         <title>ConVQA</title>
 
-        <h1>Sunny and Dark Outside?! Improving Consistency in VQA Models</h1>
+        <div class="jumbotron">
+                <h1 class="display-4">Sunny and Dark Outside?! Improving Consistency in VQA Models</h1>
+                <p class="lead"><a href="https://filebox.ece.vt.edu/~ray93/">Arijit Ray</a>, <a href="https://ksikka.com/">Karan Sikka</a>, 
+                    <a href="https://sites.google.com/view/ajaydivakaran/">Ajay Divakaran</a>, 
+                    <a href="https://www.cc.gatech.edu/~slee3191/">Stefan Lee</a>, 
+                    <a href="https://www.linkedin.com/in/giedrius-tomas-burachas-8051578/">Giedrius Burachas</a></p>
 
+        
     </head>
 
     <body>
 
-        <h2>Abstract</h2>
-        <div>While models for Visual Question Answering (VQA) have steadily improved over the years, interacting with one quickly reveals that these models lack consistency. 
-            For instance, if a model answers “red” to “What color is the balloon?”, it might answer “no” if asked, “Is the balloon red?”. 
-            These responses violate simple notions of entailment and raise questions about how effectively VQA models ground language. 
-            In this work, we introduce a dataset, ConVQA, and metrics that enable quantitative evaluation of consistency in VQA. 
-            For a given observable fact in an image (e.g. the balloon’s color),  we generate a set of logically consistent question-answer (QA) pairs (e.g. Is the  balloon red?)   
-            and  also  collect  a  human-annotated set of common-sense based consistent  QA  pairs  (e.g.  Is  the  balloon  the  same color  as  tomato  sauce?). 
-            Further, we propose a consistency-improving data augmentation module, a Consistency Teacher Module (CTM). 
-            CTM automatically generates entailed (or similar-intent) questions for a source QA pair 
-            and fine-tunes the VQA model if the VQA’s answer to the entailed question is consistent to the source QA pair. 
-            We demonstrate that our CTM-based training improves the consistency of VQA models on the Con-VQA datasets 
-            and is a strong baseline for further research.</div>
+        <div class="container">
 
+            <div class="row">
+                <div class="col-12">
+                    <h2>Abstract</h2>
+                    <div>While models for Visual Question Answering (VQA) have steadily improved over the years, interacting with one quickly reveals that these models lack consistency. 
+                    For instance, if a model answers “red” to “What color is the balloon?”, it might answer “no” if asked, “Is the balloon red?”. 
+                    These responses violate simple notions of entailment and raise questions about how effectively VQA models ground language. 
+                    In this work, we introduce a dataset, ConVQA, and metrics that enable quantitative evaluation of consistency in VQA. 
+                    For a given observable fact in an image (e.g. the balloon’s color),  we generate a set of logically consistent question-answer (QA) pairs (e.g. Is the  balloon red?)   
+                    and  also  collect  a  human-annotated set of common-sense based consistent  QA  pairs  (e.g.  Is  the  balloon  the  same color  as  tomato  sauce?). 
+                    Further, we propose a consistency-improving data augmentation module, a Consistency Teacher Module (CTM). 
+                    CTM automatically generates entailed (or similar-intent) questions for a source QA pair 
+                    and fine-tunes the VQA model if the VQA’s answer to the entailed question is consistent to the source QA pair. 
+                    We demonstrate that our CTM-based training improves the consistency of VQA models on the Con-VQA datasets 
+                    and is a strong baseline for further research.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
         <p>Preview of human-annotated common-sense based consistency data: <a href="ConVQA_verified.json"> json file </a></p>
+    </div>
 
+    <div class="row">Full data, code and more details coming soon!</div>
 
+    </div>
 
     </body>
