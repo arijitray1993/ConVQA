@@ -80,13 +80,26 @@
             <div class="col">
                 <div class = "card card-outline-secondary my-4">
                     <div class = "card-header">
-                        Datasets
+                        Dataset Preview
                     </div>
                     
                     <div class = "card-body">
                         <div><b>Logical Consistent QA's (L-ConVQA): <a href="Logical_ConVQA.zip"> json file </a></b></div>
+                        <div> Each Visual Genome image-id (in case the image-id doesn't exactly match the official Visual Genome id, the image location is at 
+                            <code>https://filebox.ece.vt.edu/~ray93/VGImages/images/VG_&lt;id&gt;.png</code>) has a separate json file named qas_&lt;id&gt;.json. The json file has two keys- consistent and inconsistent. 
+                            'Consistent' contains list of sets of consistent QA pairs. 'Inconsistent' has a list of pairs of inconsistent QA's. 
+                            We shall release bounding boxes and scene graph edges corresponding to these QA's soon.</div>
+                        <p></p>
                         <div><b>AMT Worker Cleaned Logical Consistent QA's Test set (L-ConVQA Test): <a href="cleaned_Logical_ConVQA_test.json"> json file </a></b></div>
-                        <div><b>Human-annotated common-sense based consistency data (CS-ConVQA): <a href="CommonSense_ConVQA_consistent.json"> json file </a></b></div>
+                        <div>Contains a list of cleaned sets of consistent QA pairs with the key being the Visual Genome image id. </div>
+                        <p></p>
+                        <div><b>Human-annotated common-sense based consistency data (CS-ConVQA), Consistent Sets: <a href="CommonSense_ConVQA_consistent.json"> json file </a></b></div>
+                        <div>Contains a dictionary with keys as the VQA image and values as a list of lists of consistent QA sets.</div>
+                        <p></p>
+                        
+                        <div><b>Human-annotated common-sense based consistency data (CS-ConVQA), Inconsistent Pairs: <a href="CommonSense_ConVQA_inconsistent.json"> json file </a></b></div>
+                        <div>Contains a dictionary with keys as the VQA image and values as a list of pairs of inconsistent QA's.</div>
+                        
                         
                     </div>
                 </div>
